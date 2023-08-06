@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   --orange: hsl(25, 97%, 53%);
   --white: hsl(0, 0%, 100%);
@@ -11,36 +17,54 @@
   --grey: hsl(216, 12%, 54%);
   --blue: hsl(213, 19%, 18%);
   --dark-blue: hsl(216, 12%, 8%);
+  --attr-color: hsl(228, 90%, 85%);
 }
 
 body {
   font-family: 'Overpass', sans-serif;
-  font-size: 15px;
+  font-size: 16px;
+  background-color: var(--dark-blue);
+  color: var(--white);
 }
 
-
-.attribution {
-  font-size: 11px;
-  text-align: center;
+.flex-wrap {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.attribution a {
-  color: hsl(228, 45%, 44%);
+.main-card {
+  background-color: var(--blue);
+  border-radius: 25px;
+  padding: 10px;
 }
 
-/* .attribution {
+.rating-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.thanks-card {
+
+}
+
+.footer {
   font-size: 14px;
   text-align: center;
   margin-top: 5px;
-  color: var(--attr-color);
-} */
+  color: var(--white);
+}
 
-/* .attribution a {
+.footer a {
   color: var(--attr-color);
   font-weight: bold;
-} */
+}
 
-/* .attribution a:hover {
+.footer a:hover {
   color: var(--attr-color);
   font-size: 16px;
-} */
+}
