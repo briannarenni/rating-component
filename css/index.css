@@ -1,15 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
 
-* {
-  box-sizing: border-box;
-}
-
-body,
-html {
-  margin: 0;
-  padding: 0;
-}
-
 :root {
   --orange: hsl(25, 97%, 53%);
   --white: hsl(0, 0%, 100%);
@@ -17,14 +7,36 @@ html {
   --grey: hsl(216, 12%, 54%);
   --blue: hsl(213, 19%, 18%);
   --dark-blue: hsl(216, 12%, 8%);
-  --attr-color: hsl(228, 90%, 85%);
+  --attr-color: hsl(227, 61%, 85%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
 
 body {
   font-family: 'Overpass', sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   background-color: var(--dark-blue);
+  color: var(--lite-grey);
+}
+
+h1,
+p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h1 {
   color: var(--white);
+  font-size: 1.7em;
+  font-weight: 400;
 }
 
 .flex-wrap {
@@ -36,27 +48,43 @@ body {
 }
 
 .main-card {
+  max-width: 375px;
+  min-height: 350px;
   background-color: var(--blue);
   border-radius: 25px;
   padding: 10px;
 }
 
 .rating-card {
+  /* ! combine styles later */
+  height: 95%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
 }
 
-.thanks-card {
+.thanks-card {}
 
+.rating-btns {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.star-btn {
+  color: var(--lite-grey);
+}
+
+.submit-btn {
+  color: var(--white);
 }
 
 .footer {
+  color: var(--white);
   font-size: 14px;
   text-align: center;
-  margin-top: 5px;
-  color: var(--white);
+  margin-top: 10px;
 }
 
 .footer a {
@@ -66,5 +94,5 @@ body {
 
 .footer a:hover {
   color: var(--attr-color);
-  font-size: 16px;
+  font-size: 15px;
 }
