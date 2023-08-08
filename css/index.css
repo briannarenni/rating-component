@@ -1,44 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+@import 'global.css';
 
-:root {
-  --orange: hsl(25, 97%, 53%);
-  --white: hsl(0, 0%, 100%);
-  --lite-grey: hsl(217, 12%, 63%);
-  --grey: hsl(216, 12%, 54%);
-  --blue: hsl(213, 19%, 18%);
-  --dark-blue: hsl(216, 12%, 8%);
-  --attr-color: hsl(227, 61%, 85%);
-}
-
-* {
-  box-sizing: border-box;
-}
-
-html,
-body {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: 'Overpass', sans-serif;
-  font-size: 15px;
-  background-color: var(--dark-blue);
-  color: var(--lite-grey);
-}
-
-h1,
-p {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-h1 {
-  color: var(--white);
-  font-size: 1.7em;
-  font-weight: 400;
-}
-
+/* Containers */
 .flex-wrap {
   height: 100vh;
   display: flex;
@@ -47,7 +9,7 @@ h1 {
   align-items: center;
 }
 
-.main-card {
+.card-container {
   max-width: 375px;
   min-height: 350px;
   background-color: var(--blue);
@@ -55,31 +17,63 @@ h1 {
   padding: 10px;
 }
 
+/* Rating Card */
 .rating-card {
   /* ! combine styles later */
-  height: 95%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 15px;
 }
 
-.thanks-card {}
+.icon-wrap,
+.rating-btn {
+  width: 40px;
+  height: 40px;
+  background-color: var(--bkg-grey);
+  border-radius: 50%;
+}
 
-.rating-btns {
+.icon-wrap {
+  padding: 10px;
+}
+
+.icon {
+  width: 100%;
+  height: auto;
+}
+
+.btn-group {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
-.star-btn {
+.rating-btn {
   color: var(--lite-grey);
+  box-shadow: none;
+  border: none;
+  font-size: inherit;
 }
 
 .submit-btn {
+  width: 100%;
   color: var(--white);
+  background-color: var(--orange);
+  border-radius: 20px;
+  font-size: inherit;
+  font-family: 'Overpass', sans-serif;
+  letter-spacing: 2px;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid var(--orange);
 }
 
+/* Thanks Card */
+.thanks-card {}
+
+/* Footer */
 .footer {
   color: var(--white);
   font-size: 14px;
