@@ -5,7 +5,7 @@
   --white: hsl(0, 0%, 100%);
   --lite-grey: hsl(217, 12%, 63%);
   --grey: hsl(216, 12%, 54%);
-  --bkg-grey: hsla(216, 12%, 54%, 0.154);
+  --bkg-grey: hsla(216, 12%, 54%, 0.09);
   --blue: hsl(213, 19%, 18%);
   --dark-blue: hsl(216, 12%, 8%);
   --attr-color: hsl(227, 61%, 85%);
@@ -40,6 +40,48 @@ h1 {
   font-weight: 400;
 }
 
+button {
+  font-size: inherit;
+  font-family: 'Overpass', sans-serif;
+  border: none;
+  box-shadow: none;
+}
+
 button:hover {
   cursor: pointer;
+}
+
+/* Containers */
+.flex-wrap {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  max-width: 375px;
+  min-height: 350px;
+  background-color: var(--blue);
+  border-radius: 25px;
+  padding: 10px;
+}
+
+/* Footer */
+.footer {
+  color: var(--white);
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+  letter-spacing: 1.2px;
+}
+
+.footer a {
+  color: var(--attr-color);
+}
+
+.footer a:hover {
+  color: var(--attr-color);
+  font-weight: bold;
 }

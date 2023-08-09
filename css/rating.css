@@ -1,0 +1,48 @@
+.rating-card {
+  /* !REMOVE */
+  display: none;
+  /* display: flex; */
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 15px;
+}
+
+.icon-wrap,
+.rating-btn {
+  width: 40px;
+  height: 40px;
+  background-color: var(--bkg-grey);
+  border-radius: 50%;
+}
+
+.icon-wrap {
+  padding: 10px;
+}
+
+.icon {
+  width: 100%;
+  height: auto;
+}
+
+.btn-group {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rating-btn {
+  color: var(--lite-grey);
+  box-shadow: none;
+  border: none;
+}
+
+.submit-btn {
+  width: 100%;
+  color: var(--white);
+  background-color: var(--orange);
+  border-radius: 20px;
+  letter-spacing: 2px;
+  padding: 10px;
+  margin-top: 10px;
+}

@@ -6,23 +6,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
   <title>Rating Component</title>
-  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/rating.css">
+  <link rel="stylesheet" href="css/thanks.css">
 </head>
 
 <body>
   <div class="flex-wrap">
     <main class="card-container">
       <!-- Rating Card -->
-      <section class="rating-card">
+      <article class="rating-card">
         <div class="icon-wrap">
           <img class="icon" src="images/icon-star.svg" alt="star-icon">
         </div>
-        <div class="rating-text">
+
+        <section class="rating-text">
           <h1 class="title">How did we do?</h1>
           <p class="text">
             Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!
           </p>
-        </div>
+        </section>
+
         <div class="btn-group">
           <button class="rating-btn">1</button>
           <button class="rating-btn">2</button>
@@ -30,27 +34,31 @@
           <button class="rating-btn">4</button>
           <button class="rating-btn">5</button>
         </div>
-        <button type="submit" class="submit-btn">SUBMIT</button>
-      </section>
 
-      <!-- TODO: Thank You Card -->
-      <!-- <section class="thanks-card">
-        <div class="graphic">
-          <img src="" alt="thank you graphic">
+        <button type="submit" class="submit-btn">SUBMIT</button>
+      </article>
+
+      <!-- Thank You Card -->
+      <article class="thanks-card">
+        <div class="graphic-wrap">
+          <img class="graphic" src="images/illustration-thank-you.svg" alt="thank you graphic">
         </div>
-        <p class="selection">
+
+        <p class="user-choice">
           You selected
           <span class="selection"></span>
           out of 5
         </p>
-        <div class="thanks-text">
+
+        <section class="message">
           <h1 class="title">Thank you!</h1>
           <p class="text">
             We appreciate you taking the time to give a rating. If you ever need more support,
             don't hesitate to get in touch!
           </p>
-        </div>
-      </section> -->
+        </section>
+
+      </article>
     </main>
 
     <!-- Footer -->

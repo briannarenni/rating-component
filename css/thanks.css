@@ -1,0 +1,30 @@
+.thanks-card {
+  /* display: none; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  padding: 9px;
+}
+
+.graphic-wrap {
+  padding: 10px;
+}
+
+.graphic {
+  width: 100%;
+  height: auto;
+}
+
+.user-choice {
+  color: var(--orange);
+  background-color: var(--bkg-grey);
+  border-radius: 25px;
+  padding: 5px 15px;
+  letter-spacing: 1.2px;
+}
+
+.message {
+  text-align: center;
+}
