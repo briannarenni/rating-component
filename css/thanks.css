@@ -1,6 +1,6 @@
 .thanks-card {
-  /* display: none; */
-  display: flex;
+  display: none;
+  /* display: flex; */
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
