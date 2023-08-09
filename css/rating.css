@@ -45,8 +45,14 @@
   margin-top: 10px;
 }
 
+.selected {
+  background-color: var(--orange);
+  color: var(--white);
+  outline: solid var(--white) 1px;
+}
+
 .rating-btn:hover,
-.rating-btn:focus {
+.rating-btn:active {
   background-color: var(--orange);
   color: var(--white);
   border: none;
@@ -61,4 +67,10 @@
   background-color: var(--white);
   color: var(--orange);
   outline: solid var(--orange) 1px;
+}
+
+.submit-btn:disabled {
+  cursor: not-allowed;
+  background-color: var(--grey);
+  color: black;
 }

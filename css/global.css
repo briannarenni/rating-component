@@ -53,10 +53,6 @@ button:hover {
   cursor: pointer;
 }
 
-button:focus {
-  outline: solid var(--white) 1px;
-}
-
 /* Containers */
 .flex-wrap {
   height: 100vh;
@@ -72,6 +68,13 @@ button:focus {
   background-color: var(--blue);
   border-radius: 25px;
   padding: 10px;
+}
+
+@media screen and (max-width: 375px) {
+  .card-container {
+    border-radius: 0;
+    min-height: 400px;
+  }
 }
 
 /* Footer */
