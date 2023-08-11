@@ -47,9 +47,6 @@ button {
   font-family: 'Overpass', sans-serif;
   border: none;
   box-shadow: none;
-}
-
-button:hover {
   cursor: pointer;
 }
 

@@ -26,6 +26,16 @@ $(document).ready(() => {
     $('.thanks-card').toggle();
   };
 
+  const closeThanks = () => {
+    ratingValue = 0;
+    $('.selection').text('');
+    $('.rating-btn').removeClass('selected');
+    $('.rating-card').toggle();
+    $('.thanks-card').toggle();
+    $('.submit-btn').prop('disabled', true);
+  };
+
   $('.rating-btn').click(handleRating);
   $('.submit-btn').click(toggleThanks);
+  $('.close-btn').click(closeThanks);
 });
