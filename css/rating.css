@@ -51,11 +51,14 @@
   outline: solid var(--white) 1px;
 }
 
-.rating-btn:hover,
-.rating-btn:active {
-  background-color: var(--orange);
-  color: var(--white);
-  border: none;
+@media (hover: hover) {
+
+  .rating-btn:hover,
+  .rating-btn:active {
+    background-color: var(--orange);
+    color: var(--white);
+    border: none;
+  }
 }
 
 .submit-btn:hover {
